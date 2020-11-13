@@ -6,16 +6,12 @@ from telethon import TelegramClient, sync, events
 from telethon.tl.functions.contacts import ResolveUsernameRequest
 from telethon.tl.types.messages import Messages
 from telethon.tl.types.contacts import Contacts
-from telethon.tl.functions.contacts import GetContactsRequest
-import requests
-  
-   
+from telethon.tl.functions.contacts import GetContactsRequest 
 # obtener datos de la api (api_id, api_hash, token)
 # desde el telegrama como se describe arriba
 api_id = '2874192'
 api_hash = 'e0010897cd27a19d8722b1d9450400f9'
 token = 'bot1444469431:AAHGiijQJ952yuD8MA2TBLQKQs4uovypng4'
-mensaje = 1
 # Numero de celular 
 phone = '+573186492691'
    

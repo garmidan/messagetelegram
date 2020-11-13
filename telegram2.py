@@ -35,7 +35,9 @@ if not client.is_user_authorized():
 try: 
     # El receptor
     contacts = client(GetContactsRequest(0))
+    # recorrer todos los numeros de telefono
     for u in contacts.users: 
+        # validar que sea el numero de telefono al que le quiero enviar el mensaje
         if u.phone == "573123189219":
             client.send_message(InputPeerUser(u.id, u.access_hash), "Hola desde python") 
             # enviando mensaje usando el cliente de telegram 
